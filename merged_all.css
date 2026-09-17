@@ -999,3 +999,19 @@ border-bottom-right-radius: 20px;}
     border-radius: 5px 0px 0px 5px;
     border-right: none;
 }
+
+/* ===== Dark-Mode-Fix: native Erfahrungs-/Energie-Balken (inline Styles von Freewar) ===== */
+/* Diese Balken (Erfahrung, Phasenenergie, Zeitkontrollfelder) werden per Inline-Style mit
+   images/energyred_bg.jpg (Leerbalken) und images/buttonblue_bg.jpg (Füllstand) eingefärbt.
+   Da Inline-Styles Vorrang haben, muss hier mit !important überschrieben werden. */
+[style*="energyred_bg"] {
+    background-image: none !important;
+    background-color: #3a1a1a !important;
+}
+[style*="buttonblue_bg"] {
+    background-image: none !important;
+    background-color: #1f5c8f !important;
+}
+[style*="color: black"] {
+    color: #f0f0f0 !important;
+}
