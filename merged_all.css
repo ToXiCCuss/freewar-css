@@ -561,9 +561,13 @@ option[value="2039"]:hover:after { content: "(Position X: -1298 Y: -1396)"; }
 	.loginsubmit		{ width: 100%; font-size: 10px; }
 
 /* forms */
-	.input 			{ font-size: 11px; background-color: #2b2118; height: 17px; border: 1px solid #C85424; }
-	textarea		{ font-size: 12px; background-color: #2b2118; border: 1px solid #C85424; }
-	select 			{ font-size: 11px; background-color: #17242b; }
+	.input 			{ font-size: 11px; background-color: #2b2118; color: #eaeaea; height: 17px; border: 1px solid #C85424; }
+	textarea		{ font-size: 12px; background-color: #2b2118; color: #eaeaea; border: 1px solid #C85424; }
+	select 			{ font-size: 11px; background-color: #17242b; color: #eaeaea; }
+
+/* Dark-Mode-Fix: Eingabefelder ohne .input-Klasse (z.B. Such-/Filterfelder) */
+	input[type="text"], input[type="password"], input[type="search"], input[type="number"] { background-color: #2b2118; color: #eaeaea; }
+	select option { background-color: #17242b; color: #eaeaea; }
 
 /* chat buttons */
 .submitsagen {
