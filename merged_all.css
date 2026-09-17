@@ -1015,3 +1015,8 @@ border-bottom-right-radius: 20px;}
 [style*="color: black"] {
     color: #f0f0f0 !important;
 }
+
+/* Dark-Mode-Fix: Chat-Zeitstempel (Freewar setzt hierfür fest color: #222) */
+.framechattextbg span.chattime {
+    color: #999999 !important;
+}
